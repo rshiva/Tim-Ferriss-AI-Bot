@@ -1,0 +1,4 @@
+venv/
+.vercel
+.DS_Store
+__pycache__
