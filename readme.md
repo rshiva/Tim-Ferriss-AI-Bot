@@ -1,3 +1,6 @@
+## Run the app locally
+- pip3 install -r requirements.txt
+- python app.py
 
 
 ## Scrape Data
@@ -22,10 +25,6 @@ Set the following environment variables in your `~/.bash_profile` or `~/.bashrc`
 - `SUPABASE_KEY`
 - `OPENAI_API_KEY`
 
-
-## Run the app
-- pip3 install -r requirements.txt
-- python app.py
 
 ## Credits
 
