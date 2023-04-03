@@ -3,11 +3,11 @@ create extension vector;
 
 -- Run 2nd 
 create table tim (
-  id bigserial primary key,
+  id int primary key,
   url text,
   title text,
   content text,
-  content_tokens bigint,
+  content_tokens int,
   embedding vector (1536)
 );
 

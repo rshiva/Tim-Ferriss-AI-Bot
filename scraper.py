@@ -34,16 +34,16 @@ with open(f'content-{now}.csv', mode='w') as csv_file:
       output = io.BytesIO()
       output.write(requests.get(url).content)
       output.seek(0)
-      pdf_reader = PyPDF2.PdfFileReader(output)
+      pdf_reader = PyPDF2.PdfReader(output)
       # Get the number of pages in the PDF
-      num_pages = pdf_reader.numPages
+      num_pages = len(pdf_reader.pages)
       # Initialize a variable to store the text
       pdf_text = ""
 
       # Iterate through each page
       for page in range(num_pages):
           # Extract the text from the page
-          pdf_text += pdf_reader.getPage(page).extractText()
+          pdf_text += pdf_reader.pages[page].extract_text()
       
       print("author, url", author, url)
 
