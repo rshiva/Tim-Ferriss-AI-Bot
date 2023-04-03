@@ -2,7 +2,7 @@
 create extension vector;
 
 -- Run 2nd 
-create table test (
+create table tim (
   id int primary key,
   url text,
   title text,
