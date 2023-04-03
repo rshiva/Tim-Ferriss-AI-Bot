@@ -2,13 +2,10 @@ import numpy as np
 import openai
 import pandas as pd
 import pickle
-import tiktoken
 import asyncio
 from datetime import datetime
 import requests
 import json
-import sseclient
-
 import os
 from supabase import create_client, Client
 
